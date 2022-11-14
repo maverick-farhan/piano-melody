@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Marhey&display=swap');
+
+
+
+*,html,body,*::after,*::before{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html,body{
+width:100%;
+height:100%;
+overflow:hidden;
+background-color:#DEBACE;
+}
+
+h1{
+text-align:center;
+font-size:60px;
+color:#eee;
+padding-top:30px;
+-webkit-text-stroke:1px #7F669D;
+font-family: 'Marhey', cursive;
+}
+i{
+position:absolute;
+animation:rotate 5s linear infinite;
+}
+.ghost{
+transform:rotate(-40deg);
+font-size:60px;
+top:46rem;
+color:#0008C1;
+left:53rem;
+}
+
+.tiktok{
+transform:rotate(40deg);
+font-size:90px;
+color:#EF9A53;
+top:3rem;
+left:9rem;
+}
+
+.star{
+transform:rotate(4deg);
+font-size:120px;
+color:#852999;
+top:1rem;
+left:87rem;
+}
+.bomb{
+transform:rotate(-10deg);
+font-size:70px;
+top:20rem;
+color:#0D4C92;
+left:89rem;
+}
+
+.music{
+transform:rotate(-40deg);
+font-size:80px;
+top:40rem;
+color:#DC3535;
+left:9rem;
+}
+
+.circle1{
+top:50rem;
+left:94rem;
+color:#E0144C;
+font-size:50px;
+animation:scale1 3s linear infinite;
+}
+
+.circle2{
+top:0rem;
+left:-1rem;
+color:#6F38C5;
+font-size:60px;
+animation:scale2 3s linear infinite;
+}
+small{
+position:relative;
+left:50%;
+top:10px;
+background-color:#000;
+color:#eee;
+font-family:'Arial';
+padding:10px;
+transform:translateX(-50%);
+width:fit-content;
+border:2px solid #eee;
+font-size:14px;
+display:block;
+text-align:center;
+}
+
+
+
+div.wrapper{
+width:800px;
+position:absolute;
+background:#fff;
+margin:auto;
+left:50%;
+top:15rem;
+transform:translateX(-50%);
+height:400px;
+display:flex;
+}
+
+div.a{
+width:100%;
+height:100%;
+border-right:1px solid #222;
+transition:all .2s linear;
+cursor:pointer;
+}
+
+div.b{
+width:4rem;
+height:14rem;
+background:#000;
+transition:all .2s linear;
+}
+
+div.a:hover{
+background-color:#BA94D9;
+}
+/*
+div.b:hover{
+background-color:pink;
+}
+*/
+
+@keyframes rotate{
+to
+{
+	transform:rotate(360deg);
+}
+
+from{
+	transform:rotate(0deg);
+}
+}
+
+@keyframes scale1{
+to{
+transform:scale(3);
+}
+from{
+transform:scale(1);
+}
+
+}
+@keyframes scale2{
+to{
+transform:scale(5);
+}
+from{
+transform:scale(1);
+}
+
+}
